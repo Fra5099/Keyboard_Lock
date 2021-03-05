@@ -12,10 +12,12 @@ def lockKeyboard():
     """
     while True:
         # locks the keyboard for 5s
+        # command: xinput float keyborad_ID
         os.system('xinput float 8')
         time.sleep(5)
 
         # Enable the keyboard fo 10s
+        # command: xinput float keyborad_ID slave_keyboard_number
         os.system('xinput reattach 8 3')
         time.sleep(10)
 
